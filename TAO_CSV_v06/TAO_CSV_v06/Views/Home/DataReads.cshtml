@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "Data Finder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-sm-12" style="padding-bottom:20px">
+        <br />
+        <div class="col-sm-2">
+            <span>Select File type:</span>
+        </div>
+
+        <div class="col-sm-3">
+            <select name="mType" id="mType">
+                <option value="hourlyReads">Hourly Reads(';', '\n')</option>
+                <option value="dailyReads">Daily Reads(';', '\n')</option>
+            </select>
+        </div>
+
+        <div class="col-sm-2">
+            <span>Select File  :</span>
+        </div>
+        <div class="col-sm-3">
+            <input class="form-control" type="file" name="importFile" id="importFile" />
+        </div>
+        <div class="col-sm-3">
+            <input class="btn btn-primary" id="btnUpload" type="button" value="Upload" />
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        $(document).on("click", "#btnUpload", function () {
+            $choice = $(this).val();
+            $url = false;
+        //$("#Option").on("change", function () {
+            switch (mType.value) {
+                case 'hourlyReads':
+                    $url = '/Home/ImportFile';
+                    break;
+
+                case 'dailyReads':
+                    $url = '/Home/ImportDailyReads';
+                    break;
+                default:
+                    break;
+            }
+
+            if ($url) {
+                //change "action" attribute
+                $(document).attr("action", $url);
+                //trigger "submit" event
+                $(document).trigger("submit");
+            }
+        });
+
+
+        $(document).submit(function (ev) {
+            var files = $("#importFile").get(0).files;
+
+            var formData = new FormData();
+            formData.append('importFile', files[0]);
+
+            $.ajax({
+                url: $(this).attr("action"),
+                data: formData,
+                type: 'POST',
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    if (data.Status === 1) {
+                        alert(data.Message);
+                    } else {
+                        alert("Failed to Import " + data.Message);
+                    }
+                }
+            });
+        });
+    </script>
+}

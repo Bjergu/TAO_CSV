@@ -1,0 +1,248 @@
+﻿@model TAO_CSV_v06.Models.HourlyRead
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>HourlyRead</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MeterNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeterNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeterMeasureType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeterMeasureType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InstallationNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InstallationNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Timestamp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Timestamp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InfoCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InfoCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Energy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Energy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnergyUnit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnergyUnit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Volume)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Volume)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VolumeUnit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VolumeUnit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HourCounter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HourCounter)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HourCounterUnit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HourCounterUnit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TempForward)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TempForward)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TempForwardUnit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TempForwardUnit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TempReturn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TempReturn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TempReturnUnit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TempReturnUnit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.valueTempDiff)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.valueTempDiff)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TempDiffUnit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TempDiffUnit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Power)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Power)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PowerUnit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PowerUnit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Flow)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Flow)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FlowUnit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FlowUnit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peak)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peak)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PeakUnit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PeakUnit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ForwardedUsage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ForwardedUsage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ForwardedUsageUnit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ForwardedUsageUnit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReturnedUsage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReturnedUsage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReturnedUsageUnit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReturnedUsageUnit)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,206 @@
+﻿@model IEnumerable<TAO_CSV_v06.Models.HourlyRead>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Find by name: <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" />
+            <input type="submit" value="Search" class="btn btn-default" /> |
+            <a asp-action="Index">Back to Full List</a>
+        </p>
+    </div>
+</form>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MeterNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MeterMeasureType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InstallationNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Timestamp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InfoCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Energy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnergyUnit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Volume)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VolumeUnit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HourCounter)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HourCounterUnit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TempForward)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TempForwardUnit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TempReturn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TempReturnUnit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.valueTempDiff)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TempDiffUnit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Power)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PowerUnit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Flow)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FlowUnit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Peak)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PeakUnit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ForwardedUsage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ForwardedUsageUnit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReturnedUsage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReturnedUsageUnit)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MeterNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MeterMeasureType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InstallationNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Timestamp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InfoCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Energy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnergyUnit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Volume)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VolumeUnit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HourCounter)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HourCounterUnit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TempForward)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TempForwardUnit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TempReturn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TempReturnUnit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.valueTempDiff)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TempDiffUnit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Power)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PowerUnit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Flow)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FlowUnit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Peak)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PeakUnit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ForwardedUsage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ForwardedUsageUnit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReturnedUsage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReturnedUsageUnit)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
