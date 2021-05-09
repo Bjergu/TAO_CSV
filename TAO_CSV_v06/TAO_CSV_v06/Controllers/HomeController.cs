@@ -37,18 +37,36 @@ namespace TAO_CSV_v06.Controllers
             return View();
         }
 
-        public ActionResult DataReads()
+        public ActionResult Tilskudsberegner()
         {
-            ViewBag.Message = "Ich bin Arcur.";
+            ViewBag.Message = "Tilskudsberegner.";
 
             return View();
         }
+
+        public ActionResult Mailer()
+        {
+            ViewBag.Message = "Mailer.";
+
+            return View();
+        }
+
+        [Authorize]
+        public ActionResult DataReads()
+        {
+            ViewBag.Message = "Datar reads";
+
+            return View();
+        }
+
+        [Authorize]
         public ActionResult PrintSVC()
         {
             _dbContext.HourlyReads.ToList();
             return View();
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult> ImportFile(HttpPostedFileBase importFile)
         {

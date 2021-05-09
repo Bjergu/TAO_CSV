@@ -1,0 +1,25 @@
+﻿@model TAO_CSV_v06.Models.MailModel
+@{
+    ViewBag.Title = "Mailer";
+}
+<h2>Index</h2>
+
+<fieldset>
+    <legend>
+        Send Email
+    </legend>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary()
+        <p>From: </p>
+        <p>@Html.EditorFor(model => model.From, new { htmlAttributes = new { @class = "form-control" } })</p>
+        <p>To: </p>
+        <p>@Html.EditorFor(model => model.To, new { htmlAttributes = new { @class = "form-control" } })</p>
+        <p>Subject: </p>
+        <p>@Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control" } })</p>
+        <p>Body: </p>
+        <p>@Html.EditorFor(model => model.Body, new { htmlAttributes = new { @class = "form-control" } })</p>
+        <input type="submit" value="Mailer" />
+    }
+</fieldset> 
