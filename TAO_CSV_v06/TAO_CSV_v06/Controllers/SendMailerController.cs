@@ -29,7 +29,7 @@ namespace TAO_CSV_v06.Controllers
                     smtp.Host = "smtp.live.com";
                     smtp.Port = 587;
                     smtp.UseDefaultCredentials = false;
-                    smtp.Credentials = new System.Net.NetworkCredential("aarad93@hotmail.com", "Budzygan93"); // Enter seders User name and password  
+                    smtp.Credentials = new System.Net.NetworkCredential("artutest@hotmail.com", "20TesT20"); // Enter seders User name and password  
                     smtp.EnableSsl = true;
                     smtp.Send(mail);
                     return View("Mailer", _objModelMail);

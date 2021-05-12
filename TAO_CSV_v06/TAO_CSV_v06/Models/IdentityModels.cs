@@ -30,8 +30,6 @@ namespace TAO_CSV_v06.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<TAO_CSV_v06.Models.ContactForm> ContactForms { get; set; }
-
         public System.Data.Entity.DbSet<TAO_CSV_v06.Models.HourlyRead> HourlyReads { get; set; }
 
         public System.Data.Entity.DbSet<TAO_CSV_v06.Models.DailyRead> DailyReads { get; set; }

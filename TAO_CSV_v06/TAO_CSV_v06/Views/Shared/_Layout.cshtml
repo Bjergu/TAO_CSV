@@ -77,44 +77,33 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
 
-                </button>
                 @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
 
             <div class="mynb_navbar">
-                <a>@Html.ActionLink("Home", "Index", "Home")</a>
-                <a>@Html.ActionLink("About", "About", "Home")</a>
-                <a>@Html.ActionLink("Contact", "Create", "ContactForms")</a>
-                <a>@Html.ActionLink("Tilskudsberegner", "Tilskudsberegner", "Home")</a>
-                <a>@Html.ActionLink("Data Finder", "DataReads", "Home")</a>
+                @Html.ActionLink("Home", "Index", "Home")
+                @Html.ActionLink("About", "About", "Home")
+                @Html.ActionLink("Contact", "Mailer", "SendMailer")
+                @Html.ActionLink("Tilskudsberegner", "Tilskudsberegner", "Home")
+                @Html.ActionLink("Data Finder", "DataReads", "Home")
                 <div class="mynb_dropdown">
                     <button class="mynb_dropbtn">
                         Data Tables
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="mynb_dropdown-content">
-                        <a>@Html.ActionLink("Hourly Reads", "Index", "HourlyReads")</a>
-                        <a>@Html.ActionLink("Daily Reads", "Index", "DailyReads")</a>
-                        <a href="#">Link 3</a>
-                        <a href="#">Link 4</a>
+                        @Html.ActionLink("Hourly Reads", "Index", "HourlyReads")
+                        @Html.ActionLink("Daily Reads", "Index", "DailyReads")
                     </div>
                 </div>
-                <div id="google_translate_element"></div>
+
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
+    <div id="google_translate_element" style="float: right"></div>
+
     <div class="container body-content">
         @RenderBody()
         <hr />

@@ -168,7 +168,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\ContactFormsController.cs" />
     <Compile Include="Controllers\DailyReadsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HourlyReadsController.cs" />
@@ -189,13 +188,12 @@
     <Compile Include="Migrations\202104160923106_HourlyReads.Designer.cs">
       <DependentUpon>202104160923106_HourlyReads.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202104160923348_ContactForms.cs" />
-    <Compile Include="Migrations\202104160923348_ContactForms.Designer.cs">
-      <DependentUpon>202104160923348_ContactForms.cs</DependentUpon>
+    <Compile Include="Migrations\202105110940109_AddBlogUrl.cs" />
+    <Compile Include="Migrations\202105110940109_AddBlogUrl.Designer.cs">
+      <DependentUpon>202105110940109_AddBlogUrl.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\ContactForm.cs" />
     <Compile Include="Models\DailyRead.cs" />
     <Compile Include="Models\HourlyRead.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -263,11 +261,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\ContactForms\Create.cshtml" />
-    <Content Include="Views\ContactForms\Delete.cshtml" />
-    <Content Include="Views\ContactForms\Details.cshtml" />
-    <Content Include="Views\ContactForms\Edit.cshtml" />
-    <Content Include="Views\ContactForms\Index.cshtml" />
     <Content Include="Views\HourlyReads\Create.cshtml" />
     <Content Include="Views\HourlyReads\Delete.cshtml" />
     <Content Include="Views\HourlyReads\Details.cshtml" />
@@ -308,8 +301,8 @@
     <EmbeddedResource Include="Migrations\202104160923106_HourlyReads.resx">
       <DependentUpon>202104160923106_HourlyReads.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104160923348_ContactForms.resx">
-      <DependentUpon>202104160923348_ContactForms.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202105110940109_AddBlogUrl.resx">
+      <DependentUpon>202105110940109_AddBlogUrl.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

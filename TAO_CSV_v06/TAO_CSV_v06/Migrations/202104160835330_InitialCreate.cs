@@ -8,18 +8,6 @@ namespace TAO_CSV_v06.Migrations
         public override void Up()
         {
             CreateTable(
-                "dbo.ContactForms",
-                c => new
-                    {
-                        Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        Email = c.String(),
-                        Phone = c.String(),
-                        Message = c.String(),
-                    })
-                .PrimaryKey(t => t.Id);
-            
-            CreateTable(
                 "dbo.AspNetRoles",
                 c => new
                     {
@@ -106,7 +94,6 @@ namespace TAO_CSV_v06.Migrations
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
-            DropTable("dbo.ContactForms");
         }
     }
 }
