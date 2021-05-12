@@ -15,6 +15,7 @@ namespace TAO_CSV_v06.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
+        [Authorize]
         // GET: DailyReads
         public async Task<ActionResult> Index(string searchString)
         {
