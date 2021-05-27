@@ -214,7 +214,6 @@ C:\Users\Bruger\source\repos\TAO_CSV\TAO_CSV_v06\TAO_CSV_v06\bin\Microsoft.Owin.
 C:\Users\Bruger\source\repos\TAO_CSV\TAO_CSV_v06\TAO_CSV_v06\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Bruger\source\repos\TAO_CSV\TAO_CSV_v06\TAO_CSV_v06\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Bruger\source\repos\TAO_CSV\TAO_CSV_v06\TAO_CSV_v06\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Bruger\source\repos\TAO_CSV\TAO_CSV_v06\TAO_CSV_v06\obj\Debug\TAO_CSV_v06.csprojAssemblyReference.cache
 C:\Users\Bruger\source\repos\TAO_CSV\TAO_CSV_v06\TAO_CSV_v06\obj\Debug\TAO_CSV_v06.Migrations.InitialCreate.resources
 C:\Users\Bruger\source\repos\TAO_CSV\TAO_CSV_v06\TAO_CSV_v06\obj\Debug\TAO_CSV_v06.Migrations.DailyReads.resources
 C:\Users\Bruger\source\repos\TAO_CSV\TAO_CSV_v06\TAO_CSV_v06\obj\Debug\TAO_CSV_v06.Migrations.HourlyReads.resources
@@ -224,3 +223,6 @@ C:\Users\Bruger\source\repos\TAO_CSV\TAO_CSV_v06\TAO_CSV_v06\obj\Debug\TAO_CSV_v
 C:\Users\Bruger\source\repos\TAO_CSV\TAO_CSV_v06\TAO_CSV_v06\obj\Debug\TAO_CSV_v06.dll
 C:\Users\Bruger\source\repos\TAO_CSV\TAO_CSV_v06\TAO_CSV_v06\obj\Debug\TAO_CSV_v06.pdb
 C:\Users\Bruger\source\repos\TAO_CSV\TAO_CSV_v06\TAO_CSV_v06\obj\Debug\TAO_CSV_v06.Migrations.AddBlogUrl.resources
+C:\Users\Bruger\source\repos\TAO_CSV\TAO_CSV_v06\TAO_CSV_v06\bin\FileWatcher.dll
+C:\Users\Bruger\source\repos\TAO_CSV\TAO_CSV_v06\TAO_CSV_v06\obj\Debug\TAO_CSV_v06.Migrations.Booking.resources
+C:\Users\Bruger\source\repos\TAO_CSV\TAO_CSV_v06\TAO_CSV_v06\obj\Debug\TAO_CSV_v06.csprojAssemblyReference.cache

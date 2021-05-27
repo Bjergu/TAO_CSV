@@ -33,5 +33,7 @@ namespace TAO_CSV_v06.Models
         public System.Data.Entity.DbSet<TAO_CSV_v06.Models.HourlyRead> HourlyReads { get; set; }
 
         public System.Data.Entity.DbSet<TAO_CSV_v06.Models.DailyRead> DailyReads { get; set; }
+
+        public System.Data.Entity.DbSet<TAO_CSV_v06.Models.Booking> Bookings { get; set; }
     }
 }
